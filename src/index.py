@@ -13,8 +13,8 @@ def add_numbers(a, b):
 
 @app.route('/sub/<float:a>/<float:b>', methods=['GET'])
 def sub_numbers(a, b):
-    #result = a - b
-    return jsonify(result=  (a - b)), 200
+    result = a - b
+    return jsonify(result=result), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
